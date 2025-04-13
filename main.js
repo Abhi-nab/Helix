@@ -1,7 +1,7 @@
 // main.js
 document.addEventListener("DOMContentLoaded", () => {
     // Load header
-    fetch("./header.html")
+    fetch("Header_And_Footer/header.html")
       .then(res => res.text())
       .then(data => {
         document.getElementById("header-placeholder").innerHTML = data;
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch(err => console.error("Header load error:", err));
   
     // Load footer
-    fetch("./footer.html")
+    fetch("Header_And_Footer/footer.html")
       .then(res => res.text())
       .then(data => {
         document.getElementById("footer-placeholder").innerHTML = data;
