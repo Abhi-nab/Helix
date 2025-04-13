@@ -1,3 +1,4 @@
+
 // hide-filename.js
 (function() {
   const path = window.location.pathname;
