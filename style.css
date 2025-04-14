@@ -147,3 +147,8 @@
   width: 80px; /* Adjust as needed */
 }
 
+.social-icons {
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
