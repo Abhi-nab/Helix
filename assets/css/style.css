@@ -164,4 +164,6 @@
     }
     .bio_img {
       float: right;
+      overflow: auto;
+      margin-left: 70%;
     }
