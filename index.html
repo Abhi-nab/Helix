@@ -7,19 +7,15 @@
   <link rel="stylesheet" href="assets/css/design.css">
   <link rel="icon" type="image/png" href="images/favicon.png" sizes="16x16">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-r..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script>
-    (function() {
-  const path = window.location.pathname;
-  if (path.endsWith('index.html') || path.endsWith('AboutUs.html') || path.endsWith('services.html')) {
-    // Replace the file name with a clean URL.
-    const newPath = path.replace(/(index\.html|AboutUs\.html|services\.html)$/, '');
-    window.history.replaceState(null, '', newPath);
-  }
-})();
-  </script>
+  <script src="assets/js/hide_file.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 <body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
 
    
   <!-- Header -->
@@ -45,26 +41,7 @@
   
    <!-- Footer -->
    <div id="footer-placeholder"></div>
-  <!-- Load JS -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-    // Load header
-    fetch("assets/html/header.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("header-placeholder").innerHTML = data;
-      })
-      .catch(err => console.error("Header load error:", err));
+   <script src="assets/js/index.js"></script>
   
-    // Load footer
-    fetch("assets/html/footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      })
-      .catch(err => console.error("Footer load error:", err));
-  });
-
-  </script>
 </body>
 </html>
