@@ -19,10 +19,9 @@
   
     // Preloader
   
-    window.addEventListener('load', () => {
-      const pre = document.getElementById('preloader');
-      pre.classList.add('fade-out');
-      pre.addEventListener('transitionend', () => pre.remove());
+  
+ 
+    window.addEventListener("load", () => {
+      document.querySelector(".preloader").style.display = "none";
     });
- 
- 
+    
