@@ -129,7 +129,7 @@
 
     }
     
-    /* Responsive adjustments for smaller screens 
+    /* Responsive adjustments for smaller screens */
     @media (max-width: 767px) {
       header {
         flex-direction: column;
@@ -154,7 +154,7 @@
         padding: 10px;
 
             }
-        *//* Responsive adjustments for smaller screens */
+          }
       
     header .logo img {
         height: 40px; 
