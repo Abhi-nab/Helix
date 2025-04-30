@@ -7,9 +7,19 @@
   <link rel="stylesheet" href="assets/css/design.css">
   <link rel="icon" type="image/png" href="images/favicon.png" sizes="16x16">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-r..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="assets/js/hide_file.js"></script>
+  <script>
+    (function() {
+    const path = window.location.pathname;
+    if (path.endsWith('index.html') || path.endsWith('AboutUs.html') || path.endsWith('services.html')) {
+      // Replace the file name with a clean URL.
+      const newPath = path.replace(/(index\.html|AboutUs\.html|services\.html)$/, '');
+      window.history.replaceState(null, '', newPath);
+    }
+  })();
+  </script>
 </head>
 <body>
+  <div class="page-wrapper">
   
   <!-- Preloader -->
   <div class="preloader">
@@ -18,31 +28,160 @@
   </div>
    
   <!-- Header -->
-  <div id="header-placeholder"></div>
+  <header>
+    <a  id ="logo" class="logo" href="index.html">
+      <img src="images/logo.png" alt="HelixQuest Sequencing (OPC) Pvt Ltd" >
+    </a>
+    
+    <nav>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+       
+        <li><a href="#about">About</a></li>
+ 
+        <li><a href="#services">Services</a></li>
+      </ul>
+    </nav>
+    
+  </header>
   
   
   <!-- Main Content Area -->
   <main>
     <!-- About Section -->
-    <section id="about">
+    <section id="Home">
       <h1>Welcome to Our Website</h1>
     </section>
-  </main>
-  <div class="youtube">
-    <iframe class="youtube-frame" src="https://www.youtube.com/embed/RzVvThhjAKw?controls=0&modestbranding=1&rel=0&showinfo=0&autoplay=1&mute=1&loop=1&playlist=RzVvThhjAKw"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-    </iframe>
-    <video class="youtube-frame" autoplay loop muted playsinline>
-      <source src="images/helix.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
+      
+        <div class="youtube">
+          <iframe class="youtube-frame" src="https://www.youtube.com/embed/RzVvThhjAKw?controls=0&modestbranding=1&rel=0&showinfo=0&autoplay=1&mute=1&loop=1&playlist=RzVvThhjAKw"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+          </iframe>
+          <video class="youtube-frame" autoplay loop muted playsinline>
+            <source src="images/helix.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+  <section id="about">
+          <h1>Why Choose Us?</h1>
+          <div>
+          <img class="bio_img" src="images/Bio_Img.png" alt="Bioinformatics Image" width="300" height="200">  
+          <div class="about-section">
+           
+            <div class="arrange_L">      
+            <h3>Why Choose Us?</h3>
+                  <ul>Proven expertise in genomics and data science</ul>
+                  <ul>Collaborative and transparent communication</ul>
+            
+                  <ul>End-to-end support from raw data to publication-ready reports</ul>
+                  <ul>Affordable and flexible pricing</ul>
+            
+                  <ul>Cutting-edge tools and methods tailored to your goals</ul>
+            </div>
+            <div class="arrange_R">
+            <h3> User-Specific Downstream Analysis</h3>
+                  <ul>We don’t just analyze data — we provide insights that matter. Our downstream analysis is designed with your scientific questions in mind, offering detailed interpretation, functional enrichment, variant annotation, pathway mapping, and more.
+                  </ul>
+            </div>
+            <div class="arrange_L">
+              <h3> Turnaround Time</h3>
+                    <ul>  We understand that time is critical in research. That’s why we ensure a rapid and efficient workflow, delivering high-quality results within short timeframes — without compromising accuracy.
+                    </ul>
+              </div>
+              <div class="arrange_R">
+              <h3>Customized Bioinformatics Analysis</h3>
+                    <ul>Every research project is unique. We provide tailored bioinformatics solutions designed to align with your specific objectives, experimental design, and data type. Whether you're working with WGS, WES, RNA-seq, or single-cell datasets, we adapt our pipelines to fit your needs.
+                    </ul>
+              </div>
+            <div class="arrange_L">
+            <h3>Advanced Analysis</h3>
+                  <ul>Harness the power of next-generation bioinformatics. We utilize state-of-the-art algorithms and platforms to perform comprehensive, in-depth analysis of complex datasets — including multi-omics integration, single-cell RNA-seq, structural variant detection, and beyond.
+                  </ul>  
+            </div>      
+          </div>
+        </div>  
+  </section>
+
+<section id="services">
+          <h1>Services We Offer</h1>
+         
+        <div class="about-section">
+            <div class="arrange_L">
+          <h3>Our Services</h3> 
+            <ul>At the intersection of innovation and precision, our suite of genomic services is crafted to empower both pioneering research and clinical diagnostics. Each service reflects our commitment to scientific excellence, accuracy, and personalized collaboration.
+            </ul>
+            </div>
+                <div class="arrange_R">
+          <h3>Research Projects</h3> 
+            <ul>In service of scientific discovery, we offer robust analytical frameworks designed to unveil the hidden patterns within complex biological data.
+            </ul>
+                </div>
+                <div class="arrange_L">
+          <h3>Transcriptome Analysis</h3> 
+            <ul>Delve into the dynamic landscape of gene expression. Our transcriptomic analysis reveals the molecular choreography of biological systems — illuminating differentially expressed genes, pathway activity, and regulatory networks with precision.
+            </ul>
+          </div>
+                <div class="arrange_R">
+          <h3>Metagenomics Analysis</h3> 
+            <ul>Explore the unseen biodiversity within environmental or clinical samples. We reconstruct microbial ecosystems, providing taxonomic profiling, functional annotation, and ecological insights through comprehensive metagenomic pipelines.
+            </ul>
+                </div>
+                <div class="arrange_L">
+          <h3>Antimicrobial Resistance (AMR) Analysis</h3> 
+            <ul>Combat the global challenge of drug resistance. Our AMR analysis detects resistance determinants across diverse samples, equipping researchers with actionable insights into pathogen susceptibility and resistance evolution.
+            </ul>
+                </div>
+                <div class="arrange_R">
+          <h3>Bacterial Whole Genome Sequencing</h3> 
+            <ul>From blueprint to biological insight — we offer high-fidelity bacterial genome assemblies, annotation, and comparative genomic analysis to support epidemiology, evolution, and functional genomics research.
+            </ul>
+            </div>
+                <div class="arrange_L">
+          <h3>Diagnostic Projects</h3> 
+            <ul>In the pursuit of clinical clarity, we bring together genomics and medicine with purpose and precision. Our diagnostic offerings empower healthcare professionals with data that informs decisions, not just results.
+            </ul>
+            </div>
+                <div class="arrange_R">
+          <h3>Somatic Tumor Analysis</h3> 
+            <ul>Uncover the mutational signatures that shape cancer. Our somatic variant analysis identifies driver mutations, structural rearrangements, and actionable alterations across the tumor genome, guiding precision oncology.
+            </ul>
+                </div>
+                <div class="arrange_L">
+          <h3>Germline Analysis with Phenotypic Correlation</h3> 
+            <ul>We integrate patient phenotype with genomic data to uncover inherited variants of clinical relevance. Using stringent interpretative frameworks and expert curation, we deliver reports that bridge the gap between sequence and significance.
+            </ul>
+                </div>
+                <div class="arrange_R">
+          <h3>Panel Screening</h3> 
+            <ul>Designed for speed, specificity, and clinical impact — our targeted panel screening supports diagnosis of inherited disorders, carrier detection, and predictive testing with unparalleled accuracy and sensitivity.
+            </ul>  
+                </div>
+        </div>
+</section>
+
+
+</main>
   
    <!-- Footer -->
-   <div id="footer-placeholder"></div>
-   <script src="assets/js/index.js"></script>
-  
+   <footer id="contact">
+    <div class="company-info">&reg;2024 HelixQuest Sequencing (OPC) Pvt. Ltd.</div>
+    <div class="contact-info">
+    <a href="mailto:helix@hqseq.in" target="_blank">  <img src="images/mail_logo.png" alt="Email" style="width: 15px; height: 15px;">helix@hqseq.in</a> 
+    <a href="https://wa.me/918917494623?text=Hiii.." target="_blank">   <i class="fab fa-whatsapp" style="font-size: 17px; color: #3c0434;"></i>+91-8917494623  </a>
+    </div>
+    <div class="social-icons">
+      <a href="https://twitter.com/HelixQuest" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/HelixQuest" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/HelixQuest" target="_blank"><i class="fab fa-youtube"></i></a>
+    </footer>
+   <script>
+      window.addEventListener("load", () => {
+      document.querySelector(".preloader").style.display = "none";
+    });
+    
+   </script>
+  </div> 
 </body>
 </html>
