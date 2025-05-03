@@ -29,8 +29,7 @@
       line-height: 1.6;
       height: 100%;
       padding-top: 10px; /* Ensure content doesn't hide behind the fixed header */
-      flex: 1;
-      flex-direction: column;      
+      margin: 0;   
     }
     
     /* Fixed Header with gradient background */
@@ -142,8 +141,8 @@
     .about-section {
       
       padding: 5px;
-      margin-left: 20%;
-      margin-right: 20%;
+      margin-left: 15%;
+      margin-right: 15%;
     }
     .bio_img {
       float: right;
@@ -166,7 +165,7 @@
       right: 0;
       border: none;
       width: 100%;
-      height: auto;
+      height: 100%;
     }
 
     /* Preloader full-screen overlay */
@@ -244,4 +243,17 @@ footer#contact .contact-info {
 footer#contact .social-icons{
   padding-bottom: 5px;
 
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#services {
+  float: right;
+}
+#about {
+  float: left;
 }
